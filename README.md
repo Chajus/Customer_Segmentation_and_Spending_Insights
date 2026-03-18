@@ -32,7 +32,7 @@ The dataset was cleaned and transformed using SQL, then visualized through an in
 ---
 
 ## How to Use
-1. Open the SQL script in this repository: [Online Retail Customer Segmentation.sql](SQL)
+1. Open the SQL script in this repository: [`Online Retail Customer Segmentation.sql`](Online Retail Customer Segmentation.sql)
 2. Run the queries in your preferred SQL environment (MySQL recommended)
 3. Use the generated CSV for visualization or further analysis
 
