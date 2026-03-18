@@ -1,81 +1,59 @@
-# Customer_Segmentation_and_Spending_Insights
+# Customer Segmentation & Spending Analysis
 
-📊 Customer Segmentation & Spending Analysis
-📌 Project Overview
+**Project Type:** SQL Data Cleaning & Analysis
+**Dataset:** Online Retail Dataset
 
-This project analyzes customer purchasing behavior using the Online Retail dataset. The goal is to identify customer segments, understand spending patterns, and uncover insights that can help improve customer retention and revenue.
+---
 
-The dataset was cleaned and transformed using SQL, and an interactive dashboard was built in Tableau to visualize key metrics and trends.
+## Overview
+This project analyzes customer purchasing behavior using the Online Retail dataset. The goal was to identify customer segments, understand spending patterns, and uncover insights to improve customer retention and revenue.
+The dataset was cleaned and transformed using SQL, then visualized through an interactive Tableau dashboard to highlight key metrics and trends.
 
-🛠️ Tools & Technologies
+## Steps Performed
 
-SQL (Data Cleaning & Transformation)
+1. **Initial Data Checks**
+- Reviewed dataset structure and columns
+- Checked for missing values (e.g., CustomerID)
+- Identified invalid transactions (negative quantities)
+- Verified data consistency across records
+- 
+2. **Data Cleaning & Transformation**
+- Removed invalid transactions (negative quantities)
+- Handled NULL values in key fields
+- Created calculated field Revenue (Quantity * UnitPrice)
+- Aggregated data to customer-level for analysis
 
-Tableau (Data Visualization & Dashboarding)
+3. **Customer Segmentation**
+- Grouped customers based on purchase frequency:
+- One-Time (1 order)
+- Occasional (2–5 orders)
+- Frequent (6+ orders)
 
-CSV (Data Export)
+---
 
-🧹 Data Cleaning & Preparation
+## How to Use
+1. Open the SQL script in this repository: [`Online Retail Customer Segmentation.sql`](SQL)
+2. Run the queries in your preferred SQL environment (MySQL recommended)
+3. Use the generated CSV for visualization or further analysis
 
-Removed invalid transactions (e.g., negative quantities)
+---
 
-Handled missing values in key fields such as CustomerID
+## Tableau Dashboard
 
-Created calculated fields for revenue (Quantity * UnitPrice)
+Interactive visualization created using the cleaned Online Retail dataset.
 
-Aggregated data to customer-level for analysis
+🔗 **View Interactive Dashboard:** 
+[https://public.tableau.com/app/profile/justincha/viz/CustomerSegmentationSpendingInsightsforOnlineRetail/Dashboard1]
 
-📊 Key Metrics (KPIs)
-
+Key Metrics (KPIs)
 Total Revenue
-
 Total Customers
-
 Average Order Value
-
-📈 Dashboard Features
-Customer Segmentation
-
-Customers were grouped based on purchase frequency:
-
-One-Time (1 order)
-
-Occasional (2–5 orders)
-
-Frequent (6+ orders)
-
-Order Frequency Distribution
-
-A histogram showing how often customers place orders, highlighting that most customers make only a small number of purchases.
-
-Top Customers by Spending
-
-Identifies the highest-value customers based on total spending.
-
-🔍 Key Insights
-
-The majority of customers are one-time buyers, indicating low customer retention
-
-A small group of frequent customers contributes disproportionately to revenue
-
-There is a strong opportunity to increase revenue through customer retention strategies
-
-📁 Files Included
-
-online_retail.sql – SQL queries used for data cleaning and analysis
-
-customer_segmentation.csv – Cleaned dataset used in visualization
-
-dashboard.png – Final dashboard screenshot
-
-⭐ Notes
-
-This project demonstrates skills in:
-
-Data cleaning and transformation
-
-SQL aggregation and analysis
-
-Data visualization and dashboard design
-
-Business insight generation
+Dashboard Features
+Customer Segmentation: Categorizes users by purchase frequency
+Order Frequency Distribution: Visualizes how often customers make purchases
+Top Customers by Spending: Highlights highest-value customers
+Key Insights
+The majority of customers are one-time buyers, indicating low retention
+A small group of frequent customers contributes a large portion of revenue
+Significant opportunity exists to increase revenue through retention strategies
